@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Barkalov_Victor-KTA-22V-loputoo</string>
+    <string name="voice_the_text">Voice the text</string>
+    <string name="exit">EXIT</string>
+    <string name="take_a_photo">Take a photo</string>
+    <string name="open_gallery">Open gallery</string>
+    <string name="make_text_smaller">make text smaller</string>
+    <string name="change_background_color_bottom">Change background color bottom</string>
+    <string name="make_text_bigger">make text bigger</string>
+    <string name="photo_field">Photo field</string>
+    <string name="image_field">Photo field</string>
+    <string name="nupp_tee_foto">Nupp tee foto</string>
+    <string name="nupp_muuda_tausta_v_rvi">Nupp muuda tausta värvi</string>
+    <string name="nupp_tee_tekst_v_iksemaks">Nupp tee tekst väiksemaks</string>
+    <string name="nupp_tee_tekst_suuremaks">Nupp tee tekst suuremaks</string>
+    <string name="nupp_ava_galerii">Nupp ava galerii</string>
+    <string name="v_lju">Välju</string>
+</resources>

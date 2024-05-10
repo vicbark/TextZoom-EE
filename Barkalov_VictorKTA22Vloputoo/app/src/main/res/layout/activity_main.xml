@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bvConstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/bvExitButton"
+            android:layout_width="320dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center"
+            android:text="@string/v_lju"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/bvImageView"
+            android:layout_width="368dp"
+            android:layout_height="194dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="19dp"
+            android:contentDescription="@string/image_field"
+            app:layout_constraintBottom_toTopOf="@+id/bvScrollView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bv_launcher_background_foreground" />
+
+        <ScrollView
+            android:id="@+id/bvScrollView"
+            android:layout_width="368dp"
+            android:layout_height="187dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#000000"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bvImageView">
+
+
+            <TextView
+                android:id="@+id/bvExtractedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="start"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textIsSelectable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view">
+
+
+            </TextView>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="368dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bvScrollView">
+
+            <ImageButton
+                android:id="@+id/bvVoiceButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bv_volume_image"
+                android:contentDescription="Nupp loe teksti"
+                tools:ignore="HardcodedText" />
+
+            <ImageButton
+                android:id="@+id/bvGalleryBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/bv_image_24"
+                android:contentDescription="@string/nupp_tee_foto" />
+
+            <ImageButton
+                android:id="@+id/bvCameraBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bv_camera_image"
+                android:contentDescription="@string/nupp_ava_galerii" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bvBottomBtns"
+            android:layout_width="368dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/bvExitButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <ImageButton
+                android:id="@+id/bvBacgroudBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:background="@drawable/bv_invert_color"
+                android:contentDescription="@string/nupp_muuda_tausta_v_rvi" />
+
+            <ImageButton
+                android:id="@+id/bvButtonMinus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/bv_minus_image"
+                android:contentDescription="@string/nupp_tee_tekst_v_iksemaks" />
+
+            <ImageButton
+                android:id="@+id/bvButtonPlus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bv_plus_image"
+                android:contentDescription="@string/nupp_tee_tekst_suuremaks" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
